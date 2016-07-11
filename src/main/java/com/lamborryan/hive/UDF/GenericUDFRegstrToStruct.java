@@ -102,8 +102,9 @@ public class GenericUDFRegstrToStruct extends GenericUDF {
         //String reg = "([^()]*) \\(([^;]*);([^;]*);([^;]*);([^;]*);?([^;]*)\\)";
 
         String reg = "([^()]*)\\(([^;]*)[;]?([^;]*)[;]?([^;]*)[;]?([^;]*)[;]?([^;]*)\\)";
-        //String str = "bxs_a (m1 metal;android5.1;2.0.0;1920.0x1080.0;postition_xxxx)";
-        String str = "bxs_i(iPhone; 9.3.2; 2.0.0; 375x667; position_110.1334642701214_22.58369232095267)";
+        String str = "bxs_a (m1 metal;android5.1;2.0.0;1920.0x1080.0;postition_xxxx)";
+        // String str = "bxs_i(iPhone; 9.3.2; 2.0.0; 375x667; position_110.1334642701214_22.58369232095267)";
+        //String str ="Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)";
         //String str = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)";
         Pattern p = Pattern.compile(reg);
         Matcher m = p.matcher(str);
